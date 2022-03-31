@@ -6,8 +6,8 @@ Esegui questo programma in due versioni, con il for e con il while. */
 let somma = 0
 
 for (let i = 0; i < 5; i++) {
-    let userNumber = parseInt(prompt('inserisci un numero'));
-    somma += userNumber 
+    let userNumber = parseInt(prompt('inserisci un numero')); //chiedo all'utente di inserire un numero 5 volte
+    somma += userNumber //eseguo la somma dei numeri inseriti
 }
 console.log(somma);   
 
@@ -17,9 +17,9 @@ let somma2 = 0
 let k = 0
 
 while (k < 5) {
-    let userNumber2 = parseInt(prompt('inserisci un numero'))
-    somma2 += userNumber2
-    k++
+    let userNumber2 = parseInt(prompt('inserisci un numero'))//chiedo all'utente di inserire un numero 5 volte
+    somma2 += userNumber2 //eseguo la somma dei numeri inseriti
+    k++ 
 }
 
 console.log(somma2);   
