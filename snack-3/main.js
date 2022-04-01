@@ -5,10 +5,14 @@ let firstname = ['arianna', 'elisa', 'giovanni', 'luca',]
 let surname = ['greco', 'rossi', 'bianchi', 'verdi',]
 let list = []
 
-i = 0
-while (i < firstname.length && surname.length) {
-    list.push(firstname[i] + surname[i])
-    i++
-}
 
-console.log(list);
+for (let i = 0; i < 8; i++) {
+    const first_random = Math.floor(Math.random() * firstname.length)
+    const second_random = Math.floor(Math.random() * surname.length)
+    const firstnameList = firstname[first_random]
+    const surnameList = surname[second_random]
+    const fullName = firstnameList + ' ' + surnameList
+    
+    console.log(fullName);
+
+}

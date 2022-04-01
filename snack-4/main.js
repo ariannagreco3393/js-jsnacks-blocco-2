@@ -9,10 +9,9 @@ let somma = 0
 
 let i = 0
 while (i < nInteri.length) {
-    if (nInteri.indexOf(i) % 2 != 0) {
+    if (i % 2 != 0) {
         let dispari = i
-        console.log(dispari);
-        somma += dispari
+        somma += nInteri[i]
     }
     
     i++
